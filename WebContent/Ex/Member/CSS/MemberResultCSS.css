@@ -1,0 +1,14 @@
+@charset "UTF-8";
+html {
+	background : blue;
+}
+table {
+	margin : 0 auto;
+	width : 300px;
+	heihgt : 300px;
+	text-align : center;
+}
+
+td, th {
+	background : skyblue;
+}

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+html {
+	background : gray;
+}
+legend {
+	text-align : center;
+}
+label:not(.atr) {
+	font-weight : bold;
+}
+input[type="text"], input[type="password"] {
+	margin-top : 5px;
+	height : 32px;
+	background : #e7e5e5;
+	border : 0;
+	padding-left : 5px;
+}
+p {
+	border : 1px solid gray;
+	height : 35px;
+	line-height : 35px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#id {
+	width : 70%;
+}
+#jumin1, #jumin2 {
+	width : 47.9%;
+}
+#pass {
+	width : 99%;
+}
+#post1 {
+	width : 70.3%;
+}
+input[type="button"] {
+	width : 28%;
+	height : 31px;
+	background : orange;
+	border : 0;
+	font-size : 8pt;
+}
+input[type="button"]:hover {
+	opacity : 0.6;
+}
+#sel {
+	width : 30%;
+	height : 31px;
+	border : 0;
+	background : lightgray;
+}
+#email, #domain {
+	width : 32%;
+}
+#address {
+	width : 99%;
+}
+.atr {
+	margin-right : 8px;
+	font-size : 11pt;
+}
+#intro {
+	width : 99%;
+}
+#button1 {
+	background : red;
+}
+#button2 {
+	background : lightgreen;
+}
+button {
+	width :50%;
+	height:40px;
+	color : white;
+	border-width:0px;
+	float : left;
+}
+button:hover {
+	opacity : 0.6;
+}
+form {
+	background : white;
+	width :800px;
+	margin : 0 auto;
+}
+legend {
+	font-size : 40px;
+	font-weight : bold;
+}
