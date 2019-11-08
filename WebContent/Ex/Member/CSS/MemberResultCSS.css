@@ -1,6 +1,6 @@
-@charset "UTF-8";
+@charset "EUC-KR";
 html {
-	background : blue;
+	background : yellow;
 }
 table {
 	margin : 0 auto;

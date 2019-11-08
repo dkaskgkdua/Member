@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="EUC-KR">
 <title>Insert title here</title>
 <link rel = "stylesheet" type="text/css" href="CSS/MemberCSS.css">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
@@ -9,70 +9,68 @@
  <script src = 'js/MemberJS.js'></script>
 </head>
 <body>
-   <form method ="get" action = "memberDispatcherServlet" name = "myform" id ="myform"> 
+   <form method ="post" action = "memberDispatcherServlet" name = "myform" id ="myform"> 
     <div class ="container">
     <fieldset>
-     <legend>유효성 검사</legend>
+     <legend>��ȿ�� �˻�</legend>
      	<label for ="id"><b>ID</b></label><br>
      	<input type = "text" size="10px" name = "id" id="id" placeholder ="Enter id" >
-     	<input type = "button" value = "ID 중복검사" id="idCheckButton">
+     	<input type = "button" value = "ID �ߺ��˻�" id="idCheckButton">
      	
      	<br>
-     	<label for ="pass"><b>비밀번호</b></label><br>
+     	<label for ="pass"><b>��й�ȣ</b></label><br>
      	<input type = "password" name ="pass" id="pass" placeholder = "Enter Password" >
      	
      	<br>
-     	<label for ="jumin1"><b>주민번호</b></label><br>
-     	<input type="text"  name="jumin1" id = "jumin1" placeholder = "주민번호 앞자리"> -
-     	<input type="text"  name="jumin2" id = "jumin2" placeholder = "주민번호 뒷자리">
+     	<label for ="jumin1"><b>�ֹι�ȣ</b></label><br>
+     	<input type="text"  name="jumin1" id = "jumin1" placeholder = "�ֹι�ȣ ���ڸ�"> -
+     	<input type="text"  name="jumin2" id = "jumin2" placeholder = "�ֹι�ȣ ���ڸ�">
      	<br>
      	<label>E-Mail</label><br>
      	<input type=text name = email id = email> @
      	<input type=text name = domain id=domain pattern="[A-Za-z]+.[A-Za-z]+">
      	<select name = sel id = sel>
-     		<option value="">직접입력</option>
+     		<option value="">�����Է�</option>
             <option value="naver.com">naver.com</option>
             <option value="daum.net">daum.net</option>
             <option value="nate.com">nate.com</option>
             <option value="gmail.com">gmail.com</option>
      	</select>
      	<br>
-     	<label for = "gender1">성별</label><br>
+     	<label for = "gender1">����</label><br>
      	<p>
      	<input type="radio" name = "gender" value = "m" id="gender1">
-     	<label class = "atr" for = "gender1">남자</label>
+     	<label class = "atr" for = "gender1">����</label>
      	<input type="radio" name = "gender" value = "f" id="gender2">
-     	<label class = "atr"  for = "gender2">여자</label>
+     	<label class = "atr"  for = "gender2">����</label>
      	</p>
-     	<label>취미</label><br>
+     	<label>���</label><br>
      	<p>
-     	<input type="checkbox" name = "hobby" id ="hobby1" value = "공부">
-     	<label class = "atr"  for = hobby1>공부</label>
-     	<input type="checkbox" name = "hobby" id ="hobby2" value = "게임">
-     	<label class = "atr"  for = hobby1>게임</label>
-     	<input type="checkbox" name = "hobby" id ="hobby3" value = "운동">
-     	<label class = "atr"  for = hobby1>운동</label>
-     	<input type="checkbox" name = "hobby" id ="hobby4" value = "등산">
-     	<label class = "atr"  for = hobby1>등산</label>
-     	<input type="checkbox" name = "hobby" id ="hobby5" value = "낚시">
-     	<label class = "atr"  for = hobby1>낚시</label>
+     	<input type="checkbox" name = "hobby" id ="hobby1" value = "����">
+     	<label class = "atr"  for = hobby1>����</label>
+     	<input type="checkbox" name = "hobby" id ="hobby2" value = "����">
+     	<label class = "atr"  for = hobby1>����</label>
+     	<input type="checkbox" name = "hobby" id ="hobby3" value = "�">
+     	<label class = "atr"  for = hobby1>�</label>
+     	<input type="checkbox" name = "hobby" id ="hobby4" value = "���">
+     	<label class = "atr"  for = hobby1>���</label>
+     	<input type="checkbox" name = "hobby" id ="hobby5" value = "����">
+     	<label class = "atr"  for = hobby1>����</label>
      	</p>
-     	<label>우편번호</label><br>
+     	<label>������ȣ</label><br>
      	<input type="text" size="3" maxLength ="3" name = "post1" id= "post1">
-     	<input type="button" value = "우편검색" id ="postCheck">
+     	<input type="button" value = "�����˻�" id ="postCheck">
      	<br>
-     	<label>주소</label><br>
+     	<label>�ּ�</label><br>
      	<input type="text" size = "50" name="address" id="address">
      	<br>
-     	<label>자기소개</label><br>
+     	<label>�ڱ�Ұ�</label><br>
      	<textarea rows="10" cols = "75" name ="intro" id="intro"></textarea><br>
      	
-     	<button id = "button1" type = "reset" value ="취소">Cancel</button>
-     	<button id = "button2" type = "submit" value ="회원가입">Sign Up</button>
+     	<button id = "button1" type = "reset" value ="���">Cancel</button>
+     	<button id = "button2" type = "submit" value ="ȸ������">Sign Up</button>
     </fieldset>
     </div>
     </form>
-   
-    
 </body>
 </html>

@@ -1,30 +1,38 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="EUC-KR">
 <link rel = "stylesheet" type="text/css" href="CSS/MemberResultCSS.css">
-<title>М ▄Л⌡░Й╟─Л·┘ Й╡╟ЙЁ╪</title>
-</head>
+<title>х╦©Ь╟║ют ╟А╟З</title>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+
 <%
-	String id = (String)request.getAttribute("id");
-	String pass = (String)request.getAttribute("pass");
-	String jumin1 = (String)request.getAttribute("jumin1");
-	String jumin2 = (String)request.getAttribute("jumin2");
-	String email = (String)request.getAttribute("email");
-	String domain = (String)request.getAttribute("domain");
-	String gender = (String)request.getAttribute("gender");
-	String post1 = (String)request.getAttribute("post1");
-	String address = (String)request.getAttribute("address");
+String id = (String)session.getAttribute("id");
+String pass = (String)session.getAttribute("pass");
+String jumin1 = (String)session.getAttribute("jumin1");
+String jumin2 = (String)session.getAttribute("jumin2");
+String email = (String)session.getAttribute("email");
+String hobby = (String)session.getAttribute("hobby");
+String domain = (String)session.getAttribute("domain");
+String gender = (String)session.getAttribute("gender");
+String post1 = (String)session.getAttribute("post1");
+String address = (String)session.getAttribute("address");
+
 %>
+
+</script>
+</head>
+
 <body>
 
 <table>
 <thead>
 <tr>
-	<th>Л├█Л└╠</th>
-	<th>К█╟Л²╢М└╟</th>
+	<th>╪с╪╨</th>
+	<th>╣╔юлем</th>
 </tr>
 <tr>
 	<td>id</td>
@@ -47,16 +55,8 @@
 	<td><%=gender %></td>
 </tr>
 <tr>
-	<td>hobby</td><td>
-<% 
-	String[] hobbys = (String[])request.getAttribute("hobby");
-	for(int i =0; i < hobbys.length; i++) {
-%>
-	<%=hobbys[i] + " "%>
-<% 
-	}
-%>
-	</td>
+	<td>hobby</td>
+	<td><%=hobby %></td>
 </tr>
 
 <tr>
@@ -71,5 +71,6 @@
 
 </thead>
 </table>
+<a href ="logout.jsp">╥н╠в╬ф©Т</a>
 </body>
 </html>
