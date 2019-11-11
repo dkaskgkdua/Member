@@ -17,7 +17,7 @@ String id = (String)session.getAttribute("id");
 <%
 		} else {
 %>	
-			<a href = "LoginAc.jsp">로그인</a>
+			<a href = "Login.html">로그인</a>
 <%
 		}
 	}
