@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+<display-name>Member</display-name>
+   		
+		<servlet>
+			<servlet-name>configTest1</servlet-name>
+			<jsp-file>/Ex/Login/ConfigTest2.jsp</jsp-file>
+			<!--  프로젝트명 이후의 경로를 적음 -->
+			<init-param>
+				<param-name>id</param-name>
+				<param-value>jsp</param-value>
+			</init-param>
+			<init-param>
+				<param-name>password</param-name>
+				<param-value>jsp</param-value>
+			</init-param>
+		</servlet>
+		
+		<servlet-mapping>
+			<servlet-name>configTest1</servlet-name>
+			<url-pattern>/Ex/Login/ConfigTest2.jsp</url-pattern>
+		</servlet-mapping>
+</web-app>

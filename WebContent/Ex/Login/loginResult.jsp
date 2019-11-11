@@ -5,7 +5,7 @@
 <% 
 	if(session != null) {
 	String id = (String)session.getAttribute("id");
-	if(id != null && id.equals("")) {
+	if(id != null && !id.equals("")) {
 %>
 <h3> 맛저하세요</h3>
 <%
