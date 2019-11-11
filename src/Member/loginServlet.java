@@ -3,6 +3,8 @@ package Member;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -27,7 +29,8 @@ public class loginServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("euc-kr");
 		response.setContentType("text/html; charset=euc-kr");
-		
+		ServletConfig config = this.getServletConfig();
+		ServletContext context = config.getServletContext();
 		String id = request.getParameter("id");
 		String password = request.getParameter("pass");
 		
@@ -45,7 +48,7 @@ public class loginServlet extends HttpServlet {
 		
 		PrintWriter out = response.getWriter();
 		
-		if(id.equals("Java") && password.equals("java")) {
+		if(id.equals("jsp") && password.equals("jsp")) {
 			HttpSession session = request.getSession();
 			session.setAttribute("id", id);
 			session.setAttribute("pass", password);

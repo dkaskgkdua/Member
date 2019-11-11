@@ -1,13 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
-<script src="http://code.jquery.com/jquery-latest.js"></script>
- 
+
 </head>
 <body>
-   <form method ="post" action = "loginServlet" name = "myform" id ="myform"> 
+  <form method ="post" action = "ConfigTest2.jsp" name = "myform" id ="myform"> 
     <div class ="container">
     <fieldset>
      <legend>유효성 검사</legend>
