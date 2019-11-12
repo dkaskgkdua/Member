@@ -16,28 +16,33 @@
 <%
 	
 	String inputId = (String)request.getParameter("id");
-	session.setAttribute("id", inputId);
+	
     String id = config.getInitParameter("id");
     String inputPass = (String)request.getParameter("pass");
-    session.setAttribute("pass", inputPass);
+    
     String pass = config.getInitParameter("password");
     System.out.println(inputId +" " + id);
     System.out.println(inputPass +" " + pass);
     
     if(inputId.equals(id) && inputPass.equals(pass)) {
 %>
-	
+	session.setAttribute("id", inputId);
+	session.setAttribute("pass", inputPass);
 	alert("로그인 성공");
-	location.href = 'mainPage.jsp';
+	location.href = 'templateTest.jsp';
+<%
+    } else if(inputId.equals(id)){
+%>	
+	alert("비밀번호가 틀렸습니다.");
+	history.back()
 <%
     } else {
 %>
-	alert("로그인 실패");
+	alert("아이디가 틀렸습니다.")
 	history.back()
 <%
     }
-%>
-	
+%>	
 </script>
 </table>
 </div>

@@ -7,13 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<script>
-<%
-	session.invalidate();
-	
-%>	
-	alert('로그아웃 되었음');
-	location.href = 'templateTest.jsp';
-</script>
+<h2> 1임</h2>
 </body>
 </html>

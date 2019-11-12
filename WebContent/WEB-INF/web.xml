@@ -6,7 +6,7 @@ http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
    		
 		<servlet>
 			<servlet-name>configTest1</servlet-name>
-			<jsp-file>/Ex/Login/ConfigTest2.jsp</jsp-file>
+			<jsp-file>/Ex/Login/login_ok.jsp</jsp-file>
 			<!--  프로젝트명 이후의 경로를 적음 -->
 			<init-param>
 				<param-name>id</param-name>
@@ -20,6 +20,6 @@ http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
 		
 		<servlet-mapping>
 			<servlet-name>configTest1</servlet-name>
-			<url-pattern>/Ex/Login/ConfigTest2.jsp</url-pattern>
+			<url-pattern>/Ex/Login/login_ok.jsp</url-pattern>
 		</servlet-mapping>
 </web-app>

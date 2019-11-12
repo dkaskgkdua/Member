@@ -5,11 +5,10 @@
 String id = (String)session.getAttribute("id");
 		if(id != null && !id.equals("")) {
 %>
-			<a href = "logOut.jsp">(로그아웃)</a>
 <%
 		} else {
 %>	
-			<a href = "LoginAc.jsp">로그인</a>
+			<a href = "../Member/Member.html">회원가입</a>
 <%
 		}
 	}
