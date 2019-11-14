@@ -22,4 +22,30 @@ http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
 			<servlet-name>configTest1</servlet-name>
 			<url-pattern>/Ex/Login/login_ok.jsp</url-pattern>
 		</servlet-mapping>
+		
+		<context-param>
+			<description>비밀번호</description>
+			<param-name>pass</param-name>
+			<param-value>1111</param-value>
+		</context-param>
+		<context-param>
+			<description>아이디</description>
+			<param-name>id</param-name>
+			<param-value>jspP</param-value>
+		</context-param>
+		
+		
+		
+		<error-page>
+			<error-code>404</error-code>
+			<location>/error/viewErrorMessage.jsp</location>
+		</error-page>
+		<error-page>
+			<error-code>500</error-code>
+			<location>/error/viewErrorMessage500.jsp</location>
+		</error-page>
+		<error-page>
+			<exception-type>java.lang.NullPointerException</exception-type>
+			<location>/error/viewErrorMessageNull.jsp</location>
+		</error-page>
 </web-app>
