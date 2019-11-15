@@ -23,7 +23,7 @@
   <form method ="post" action = "login_add_Member" name = "myform" id ="myform"> 
  
     <fieldset>
-     <legend>로그인</legend>
+     <legend>회원가입</legend>
      <div class = "form-group">
      	<label for ="id"><b>ID</b></label><br>
      	<input class = "form-control" type = "text" size="10px" name = "id" id="id" placeholder ="Enter id" maxlength ="10">

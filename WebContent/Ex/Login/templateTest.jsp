@@ -15,13 +15,14 @@
 	margin-top : 7px;	
 }
 .list-group-item {
-	background : #222;
+	background : black;
 	color : white;
 	font-weight : bold;
 	border : 0;
 }
 html, body {
-background-image:url('../image/dd.png');
+  
+   	background : black;
 	height : 100%;
 }
 a {
@@ -31,12 +32,7 @@ a {
 footer, header { 
 	text-align : center;
 }
-aside {
-	width:15%;
-	height : 100%;
-	float : left;
-	border : 1px solid black;
-}
+
 section {
 	width : 80%;
 	height : 100%;
@@ -46,19 +42,40 @@ section {
 footer{
 	clear : both;
 }
-#wrap{
-	height : 70%;
-}
+.affix {
+    top: 0;
+    width: 100%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+  }
+.affix-top {
+    position: static;
+    top: -35px;
+  }
+.affix + .container-fluid {
+    padding-top: 70px;
+  }
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-    width: 70%;
+    width: 85%;
     margin: auto;
-    height : 300px;
+    height : 500px;
   }
 </style>
 <title>Insert title here</title>
 </head>
 <body>
+<%-- 
+ background-image:url('../image/bacg.png');
+#wrap{
+	height : 70%;
+}
+aside {
+	width:15%;
+	height : 100%;
+	float : left;
+	border : 1px solid black;
+}--%>
 <%
 	String pagefile = request.getParameter("page");
 	if(pagefile==null) {
@@ -69,7 +86,7 @@ footer{
 	<header>
 		<h1>메인화면(제목 : MFE? 이쁘게....)</h1><br>
 	</header>
-	<nav class ="navbar navbar-inverse">
+	<nav class ="navbar navbar-inverse" data-spy ="affix" data-offset-top="400">
 		<div class ="container-fluid">
 		<div class = "navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -100,6 +117,22 @@ footer{
 						<li><a href="#">경상도</a></li>
 						<li><a href="#">전라도</a></li>
 						<li><a href="#">제주도</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">장르 <span class="caret"></span></a>
+					<ul class="dropdown-menu" role = menu>
+						<li><a href="#">발라드</a></li>
+						<li><a href="#">락/메탈</a></li>
+						<li><a href="#">랩/힙합</a></li>
+						<li><a href="#">재즈/소울</a></li>
+						<li><a href="#">디너쇼</a></li>
+						<li><a href="#">포크/트로트</a></li>
+						<li><a href="#">내한공연</a></li>
+						<li><a href="#">패스티벌</a></li>
+						<li><a href="#">팬클럽</a></li>
+						<li><a href="#">인디</a></li>
+						<li><a href="#">토크/강연</a></li>
 					</ul>
 				</li>
 				<li class="dropdown">
@@ -175,9 +208,15 @@ footer{
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
-</div>
+  	</div>
+	</div>
 	</article>
+	<section>
+		<div class="container-fluid" style="height:1000px">
+ 			
+		</div>
+	</section>
+	<%--
 	<div id ="wrap">
 		<aside>
 			<div class ="list-group">
@@ -187,7 +226,7 @@ footer{
 		<section>
 			 <jsp:include page ='<%=pagefile+ ".jsp" %>'/>
 		</section>
-	</div>
+	</div> --%>
 	<footer>
 		<jsp:include page="loginResult.jsp"/>
 	</footer>

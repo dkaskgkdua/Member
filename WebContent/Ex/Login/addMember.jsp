@@ -8,7 +8,7 @@ String id = (String)session.getAttribute("id");
 <%
 		} else {
 %>	
-			<a href = "../Member/Member.html">회원가입</a>
+			<a href = "/Member/login_add_Member">회원가입</a>
 <%
 		}
 	}
